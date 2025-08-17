@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shiv Fit Gym — Modern Landing Page</title>
+  <meta name="description" content="Simple gym website built with HTML, CSS and JavaScript (single file)." />
+<link rel="stylesheet" href="Gym.css">
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">S.F.G</div>
+        <div>
+          <div style="font-weight:700">Shiv Fit Gym</div>
+          <div class="muted" style="font-size:12px">Strength • Cardio • Wellness</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#programs">Programs</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a href="#" class="cta" id="joinBtn">Join Now</a>
+      </nav>
+
+      <!-- mobile menu button -->
+      <button id="mobileMenu" aria-label="menu" style="display:none">☰</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Get stronger. Feel better. Be unstoppable.</h1>
+          <p class="lead">Personalized training, group classes, nutrition guidance — everything you need to reach your peak. First week free for new members.</p>
+
+          <div class="features">
+            <div class="feature">Certified Trainers</div>
+            <div class="feature">24/7 Access</div>
+            <div class="feature">Nutrition Plans</div>
+            <div class="feature">Group Classes</div>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><strong>10k+</strong><div class="muted">Workouts Completed</div></div>
+            <div class="stat"><strong>120+</strong><div class="muted">Classes / Month</div></div>
+            <div class="stat"><strong>4.9</strong><div class="muted">Avg Rating</div></div>
+          </div>
+
+        </div>
+
+        <aside>
+          <div class="card">
+            <img src="img/Pure-Gym-Student-Offer.png">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px">
+              <div>
+                <div style="font-weight:700">Welcome Offer</div>
+                <div class="muted" style="font-size:13px">Start your journey today</div>
+              </div>
+              <a class="btn cta" id="heroJoin">Get Started</a>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:12px;padding:12px">
+            <div style="display:flex;gap:12px;align-items:center">
+              <img src="img/istockphoto-2027278927-612x612.jpg" alt="trainer" style="width:72px;height:72px;object-fit:cover;border-radius:8px">
+              <div>
+                <div style="font-weight:700">Meet Coach Arya</div>
+                <div class="muted" style="font-size:13px">Strength & conditioning</div>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+      </section>
+
+      <section id="programs">
+        <h2 style="margin-top:28px">Programs</h2>
+        <div class="programs">
+          <div class="prog">
+            <h3>Personal Training</h3>
+            <p>1-on-1 sessions tailored to your goals, with progress tracking and monthly reassessments.</p>
+          </div>
+          <div class="prog">
+            <h3>Group Classes</h3>
+            <p>HIIT, Yoga, Spin and functional training — motivating small-group workouts led by expert coaches.</p>
+          </div>
+          <div class="prog">
+            <h3>Nutrition Coaching</h3>
+            <p>Personalized meal plans and weekly check-ins to fuel real results.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing">
+        <h2 style="margin-top:28px">Pricing</h2>
+        <div class="pricing">
+          <div class="plan">
+            <div style="font-weight:700">Monthly</div>
+            <div class="price">$39</div>
+            <div class="muted">Access to gym + group classes</div>
+            <div style="margin-top:12px"><a class="btn cta" onclick="openModal('Monthly')">Choose</a></div>
+          </div>
+          <div class="plan">
+            <div style="font-weight:700">Quarterly</div>
+            <div class="price">$99</div>
+            <div class="muted">Best value for regulars</div>
+            <div style="margin-top:12px"><a class="btn cta" onclick="openModal('Quarterly')">Choose</a></div>
+          </div>
+          <div class="plan">
+            <div style="font-weight:700">Yearly</div>
+            <div class="price">$349</div>
+            <div class="muted">Save 30% + perks</div>
+            <div style="margin-top:12px"><a class="btn cta" onclick="openModal('Yearly')">Choose</a></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 style="margin-top:28px">Contact</h2>
+        <div class="card" style="display:flex;gap:12px;align-items:center;margin-top:12px">
+          <div style="flex:1">
+            <p class="muted">Have questions? Drop us a message.</p>
+            <form id="contactForm">
+              <div style="display:flex;gap:10px">
+                <input name="name" placeholder="Your name" required style="flex:1;margin-bottom:8px">
+                <input name="phone" placeholder="Phone" required style="width:140px;margin-bottom:8px">
+              </div>
+              <input name="email" placeholder="Email" type="email" required style="width:100%;margin-bottom:8px">
+              <textarea name="message" placeholder="Message" rows="3" style="width:100%;margin-bottom:8px"></textarea>
+              <button class="btn cta" type="submit">Send</button>
+            </form>
+          </div>
+          <div style="width:220px;text-align:center">
+            <div style="font-weight:700">Open Hours</div>
+            <div class="muted">Mon — Sun<br>5:00 AM — 11:00 PM</div>
+            <div style="margin-top:10px;font-size:13px">Phone: +91 9113467803 </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div class="muted">© Shiv  Gym 2025</div>
+        <div class="muted">Danapur , Patna , Bihar </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="modal">
+    <div class="modal">
+      <button class="close" onclick="closeModal()">✕</button>
+      <h4 id="modalTitle">Join PeakFit</h4>
+      <p class="muted" id="modalSub">Enter your details and our team will reach out.</p>
+      <form onsubmit="submitModal(event)">
+        <div class="field"><label>Name</label><input id="mName" required></div>
+        <div class="field"><label><i class="el el-address-book"></i></label><input id="mName" required></div>
+        <div class="field"><label>Email</label><input id="mEmail" type="email" required></div>
+        <div class="field"><label>Preferred Plan</label><select id="mPlan"><option>Monthly</option><option>Quarterly</option><option>Yearly</option></select></div>
+        <div style="display:flex;gap:8px;justify-content:flex-end">
+          <button type="button" class="btn close" onclick="closeModal()">Cancel</button>
+          <button type="submit" class="btn cta">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  </body>
+</html>
